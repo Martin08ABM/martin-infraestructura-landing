@@ -1,0 +1,38 @@
+<svg viewBox="0 0 380 80" width="380" height="80" xmlns="http://www.w3.org/2000/svg">
+  <rect width="380" height="80" fill="#080810"/>
+
+  <!-- Icono servidor (3 racks) -->
+  <rect x="16" y="12" width="48" height="14" rx="3" fill="none" stroke="#4af0c8" stroke-width="1.5"/>
+  <rect x="16" y="30" width="48" height="14" rx="3" fill="none" stroke="#4af0c8" stroke-width="1.5"/>
+  <rect x="16" y="48" width="48" height="14" rx="3" fill="none" stroke="#ffffff25" stroke-width="1.5"/>
+
+  <!-- LED activo (rack 1) -->
+  <circle cx="55" cy="19" r="3" fill="#4af0c8"/>
+  <line x1="22" y1="19" x2="36" y2="19" stroke="#4af0c8" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- LED activo (rack 2) -->
+  <circle cx="55" cy="37" r="3" fill="#4af0c8"/>
+  <line x1="22" y1="37" x2="36" y2="37" stroke="#4af0c8" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- LED inactivo (rack 3) -->
+  <circle cx="55" cy="55" r="3" fill="#ffffff20"/>
+  <line x1="22" y1="55" x2="36" y2="55" stroke="#ffffff20" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Separador -->
+  <line x1="78" y1="14" x2="78" y2="66" stroke="#ffffff12" stroke-width="1"/>
+
+  <!-- Nombre -->
+  <text x="92" y="40"
+    fill="#ffffff"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-weight="700"
+    font-size="22"
+    letter-spacing="-0.5">Martin Bravo</text>
+
+  <!-- Tagline -->
+  <text x="93" y="58"
+    fill="#6868a0"
+    font-family="ui-monospace, monospace"
+    font-size="11"
+    letter-spacing="1.8">INFRAESTRUCTURA DIGITAL</text>
+</svg>
