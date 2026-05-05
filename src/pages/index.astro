@@ -1,319 +1,382 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <!-- NAV -->
-  <nav>
-    <a href="/">
-      <img src="/logo.svg" alt="Martin Bravo" height="36" />
-    </a>
-    <ul class="nav-links">
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#precios">Precios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-    <a href="#contacto" class="nav-cta">Solicitar info</a>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="grid-bg"></div>
-    <div class="hero-glow"></div>
-
-    <div class="hero-content">
-      <div class="hero-badge">Infraestructura digital para pymes</div>
-
-      <h1>
-        Tus datos,<br />
-        <span class="accent">tu servidor</span>,<br />
-        <span class="accent-2">tus reglas</span>
-      </h1>
-
-      <p class="hero-sub">
-        Monto servidores privados para empresas pequeñas. Sin depender de Google,
-        sin pagar por cada usuario, cumpliendo el RGPD desde el día uno.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#contacto" class="btn-primary">
-          Quiero saber más →
+    <!-- NAV -->
+    <nav>
+        <a href="/">
+            <img src="/logo.svg" alt="Martin Bravo" height="36" />
         </a>
-        <a href="#servicios" class="btn-secondary">
-          Ver servicios
-        </a>
-      </div>
+        <ul class="nav-links">
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="nav-cta">Solicitar info</a>
+    </nav>
 
-      <div class="stats">
-        <div class="stat-item">
-          <div class="stat-num"><span>-60</span>%</div>
-          <div class="stat-label">coste medio vs SaaS</div>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="grid-bg"></div>
+        <div class="hero-glow"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">Infraestructura digital para pymes</div>
+
+            <h1>
+                Tus datos,<br />
+                <span class="accent">tu servidor</span>,<br />
+                <span class="accent-2">tus reglas</span>
+            </h1>
+
+            <p class="hero-sub">
+                Monto servidores privados para empresas pequeñas. Sin depender
+                de Google, sin pagar por cada usuario, cumpliendo el RGPD desde
+                el día uno.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#contacto" class="btn-primary"> Quiero saber más → </a>
+                <a href="#servicios" class="btn-secondary"> Ver servicios </a>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-num"><span>-60</span>%</div>
+                    <div class="stat-label">coste medio vs SaaS</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num"><span>24</span>h</div>
+                    <div class="stat-label">tiempo de puesta en marcha</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num"><span>100</span>%</div>
+                    <div class="stat-label">tus datos en tu servidor</div>
+                </div>
+            </div>
         </div>
-        <div class="stat-item">
-          <div class="stat-num"><span>24</span>h</div>
-          <div class="stat-label">tiempo de puesta en marcha</div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="section reveal">
+        <p class="section-tag">// El problema</p>
+        <h2>Estás pagando demasiado<br />por herramientas que no controlas</h2>
+        <p class="section-sub">
+            Muchas pymes pagan 200-400€/mes en SaaS sin saberlo. Y encima, sus
+            datos están en servidores de empresas americanas.
+        </p>
+
+        <div class="pain-grid">
+            <div class="pain-card">
+                <div class="pain-icon">💸</div>
+                <h3>Precio por usuario</h3>
+                <p>
+                    Google Workspace, Notion, Dropbox... cada empleado nuevo son
+                    más euros al mes sin parar.
+                </p>
+                <span class="pain-price">~10€/usuario/mes cada herramienta</span
+                >
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">🔒</div>
+                <h3>Datos fuera de tu control</h3>
+                <p>
+                    ¿Sabes dónde están los datos de tus clientes? Si usas Gmail
+                    o Drive, están en servidores de EE.UU.
+                </p>
+                <span class="pain-price">Riesgo legal RGPD</span>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">📞</div>
+                <h3>Soporte inexistente</h3>
+                <p>
+                    Si algo falla, mandas un ticket a una empresa con millones
+                    de clientes. Suerte.
+                </p>
+                <span class="pain-price">Días o semanas de espera</span>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon">🔗</div>
+                <h3>Dependencia total</h3>
+                <p>
+                    Si Google cierra tu cuenta, pierdes el acceso a todo. Sin
+                    previo aviso, sin apelación real.
+                </p>
+                <span class="pain-price">Riesgo de negocio crítico</span>
+            </div>
         </div>
-        <div class="stat-item">
-          <div class="stat-num"><span>100</span>%</div>
-          <div class="stat-label">tus datos en tu servidor</div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services-section" id="servicios">
+        <div class="services-inner">
+            <p class="section-tag reveal">// Servicios</p>
+            <h2 class="reveal">
+                Lo que instalo y mantengo<br />en tu servidor
+            </h2>
+            <p class="section-sub reveal">
+                Cada herramienta es tuya. La instalo, la configuro y la
+                mantengo. Tú solo la usas.
+            </p>
+
+            <div class="services-grid">
+                <!-- Nextcloud -->
+                <div class="service-card featured reveal">
+                    <div class="service-icon green">☁️</div>
+                    <h3>Nextcloud</h3>
+                    <div class="service-replaces">
+                        Reemplaza a <span>Google Drive + Calendar + Meet</span>
+                    </div>
+                    <p>
+                        Tu propio Google Drive privado. Ficheros, calendarios,
+                        contactos y videollamadas, todo en un servidor que es
+                        tuyo.
+                    </p>
+                    <ul class="service-features">
+                        <li>
+                            Almacenamiento de archivos ilimitado (según disco)
+                        </li>
+                        <li>Calendarios y contactos sincronizados</li>
+                        <li>Videollamadas integradas (Nextcloud Talk)</li>
+                        <li>Acceso desde móvil, escritorio y web</li>
+                        <li>
+                            Sin límite de usuarios ni de almacenamiento por
+                            usuario
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Vaultwarden -->
+                <div class="service-card reveal">
+                    <div class="service-icon purple">🔐</div>
+                    <h3>Vaultwarden</h3>
+                    <div class="service-replaces">
+                        Reemplaza a <span>1Password / Bitwarden Business</span>
+                    </div>
+                    <p>
+                        Gestor de contraseñas para todo tu equipo. Las
+                        contraseñas se guardan en tu servidor, no en el de
+                        ninguna empresa externa.
+                    </p>
+                    <ul class="service-features">
+                        <li>Contraseñas cifradas en tu servidor</li>
+                        <li>Acceso desde cualquier dispositivo</li>
+                        <li>
+                            Compartir contraseñas entre empleados de forma
+                            segura
+                        </li>
+                        <li>Extensión para navegador incluida</li>
+                        <li>Compatible con la app de Bitwarden</li>
+                    </ul>
+                </div>
+
+                <!-- Hosting completo -->
+                <div class="service-card reveal">
+                    <div class="service-icon blue">🖥️</div>
+                    <h3>Hosting completo</h3>
+                    <div class="service-replaces">
+                        Reemplaza a <span>Varios SaaS combinados</span>
+                    </div>
+                    <p>
+                        Te olvidas de la infraestructura. Yo gestiono el
+                        servidor, las actualizaciones, los backups y la
+                        seguridad. Tú solo trabajas.
+                    </p>
+                    <ul class="service-features">
+                        <li>
+                            Servidor en Europa (Hetzner, Frankfurt/Helsinki)
+                        </li>
+                        <li>Backups automáticos diarios</li>
+                        <li>Actualizaciones y parches de seguridad</li>
+                        <li>Monitorización de disponibilidad 24/7</li>
+                        <li>Soporte directo por WhatsApp/email</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="section reveal">
+        <p class="section-tag">// Proceso</p>
+        <h2>Cómo funciona</h2>
+        <p class="section-sub">Sin tecnicismos, sin complicaciones.</p>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">01</div>
+                <h3>Hablamos</h3>
+                <p>
+                    Me cuentas qué herramientas usas ahora y cuánto pagas. Te
+                    digo exactamente cuánto te puedo ahorrar.
+                </p>
+            </div>
+            <div class="step">
+                <div class="step-num">02</div>
+                <h3>Preparo el servidor</h3>
+                <p>
+                    Contrato el VPS en Hetzner (servidor europeo), instalo y
+                    configuro todo. Tú no tienes que hacer nada.
+                </p>
+            </div>
+            <div class="step">
+                <div class="step-num">03</div>
+                <h3>Migras en 24h</h3>
+                <p>
+                    Te ayudo a mover tus ficheros y a que todo tu equipo empiece
+                    a usar las herramientas sin interrupciones.
+                </p>
+            </div>
+            <div class="step">
+                <div class="step-num">04</div>
+                <h3>Yo me encargo del resto</h3>
+                <p>
+                    Actualizaciones, backups, seguridad. Si hay algún problema,
+                    me llamas a mí directamente.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RGPD -->
+    <div class="rgpd-banner reveal">
+        <div class="rgpd-icon">🇪🇺</div>
+        <div class="rgpd-text">
+            <h3>RGPD sin dolores de cabeza</h3>
+            <p>
+                Los servidores están en Frankfurt o Helsinki (Hetzner), dentro
+                de la Unión Europea. Tus datos nunca salen de Europa, lo que
+                facilita enormemente el cumplimiento del Reglamento General de
+                Protección de Datos. Algo que muchas empresas con Google Drive
+                no pueden decir.
+            </p>
+        </div>
     </div>
-  </section>
 
-  <!-- PROBLEMA -->
-  <section class="section reveal">
-    <p class="section-tag">// El problema</p>
-    <h2>Estás pagando demasiado<br />por herramientas que no controlas</h2>
-    <p class="section-sub">
-      Muchas pymes pagan 200-400€/mes en SaaS sin saberlo. Y encima, sus datos
-      están en servidores de empresas americanas.
-    </p>
+    <!-- PRECIOS -->
+    <section class="pricing-section" id="precios">
+        <div class="pricing-inner">
+            <p class="section-tag reveal">// Precios</p>
+            <h2 class="reveal">Transparente desde el principio</h2>
+            <p class="section-sub reveal">
+                Sin letras pequeñas. Sin precio por usuario. Pagas una vez para
+                empezar y una cuota fija mensual.
+            </p>
 
-    <div class="pain-grid">
-      <div class="pain-card">
-        <div class="pain-icon">💸</div>
-        <h3>Precio por usuario</h3>
-        <p>Google Workspace, Notion, Dropbox... cada empleado nuevo son más euros al mes sin parar.</p>
-        <span class="pain-price">~10€/usuario/mes cada herramienta</span>
-      </div>
-      <div class="pain-card">
-        <div class="pain-icon">🔒</div>
-        <h3>Datos fuera de tu control</h3>
-        <p>¿Sabes dónde están los datos de tus clientes? Si usas Gmail o Drive, están en servidores de EE.UU.</p>
-        <span class="pain-price">Riesgo legal RGPD</span>
-      </div>
-      <div class="pain-card">
-        <div class="pain-icon">📞</div>
-        <h3>Soporte inexistente</h3>
-        <p>Si algo falla, mandas un ticket a una empresa con millones de clientes. Suerte.</p>
-        <span class="pain-price">Días o semanas de espera</span>
-      </div>
-      <div class="pain-card">
-        <div class="pain-icon">🔗</div>
-        <h3>Dependencia total</h3>
-        <p>Si Google cierra tu cuenta, pierdes el acceso a todo. Sin previo aviso, sin apelación real.</p>
-        <span class="pain-price">Riesgo de negocio crítico</span>
-      </div>
-    </div>
-  </section>
+            <div class="pricing-grid">
+                <div class="price-card reveal">
+                    <div>
+                        <div class="price-label">Setup inicial</div>
+                        <div class="price-amount">
+                            <sup>desde </sup>150<sup>€</sup>
+                        </div>
+                    </div>
+                    <p class="price-desc">
+                        Pago único para montar y configurar todo desde cero.
+                    </p>
+                    <ul class="price-list">
+                        <li>Contratación y configuración del servidor</li>
+                        <li>Instalación de las herramientas que necesites</li>
+                        <li>Configuración de dominio y SSL</li>
+                        <li>Migración de tus datos actuales</li>
+                        <li>Sesión de formación con tu equipo</li>
+                    </ul>
+                    <p class="price-note">
+                        Precio según complejidad — hablamos y presupuesto sin
+                        compromiso
+                    </p>
+                </div>
 
-  <!-- SERVICIOS -->
-  <section class="services-section" id="servicios">
-    <div class="services-inner">
-      <p class="section-tag reveal">// Servicios</p>
-      <h2 class="reveal">Lo que instalo y mantengo<br />en tu servidor</h2>
-      <p class="section-sub reveal">
-        Cada herramienta es tuya. La instalo, la configuro y la mantengo.
-        Tú solo la usas.
-      </p>
-
-      <div class="services-grid">
-        <!-- Nextcloud -->
-        <div class="service-card featured reveal">
-          <div class="service-icon green">☁️</div>
-          <h3>Nextcloud</h3>
-          <div class="service-replaces">
-            Reemplaza a <span>Google Drive + Calendar + Meet</span>
-          </div>
-          <p>
-            Tu propio Google Drive privado. Ficheros, calendarios, contactos y
-            videollamadas, todo en un servidor que es tuyo.
-          </p>
-          <ul class="service-features">
-            <li>Almacenamiento de archivos ilimitado (según disco)</li>
-            <li>Calendarios y contactos sincronizados</li>
-            <li>Videollamadas integradas (Nextcloud Talk)</li>
-            <li>Acceso desde móvil, escritorio y web</li>
-            <li>Sin límite de usuarios ni de almacenamiento por usuario</li>
-          </ul>
+                <div class="price-card highlight reveal">
+                    <div>
+                        <div class="price-label">Mantenimiento mensual</div>
+                        <div class="price-amount">
+                            <sup>desde </sup>60<sup>€</sup><sub>/mes</sub>
+                        </div>
+                    </div>
+                    <p class="price-desc">
+                        Yo me encargo de todo. Tú solo usas las herramientas.
+                    </p>
+                    <ul class="price-list">
+                        <li>Actualizaciones y parches de seguridad</li>
+                        <li>Backups automáticos diarios</li>
+                        <li>Monitorización de disponibilidad</li>
+                        <li>Soporte directo (WhatsApp / email)</li>
+                        <li>Restauración de backups si es necesario</li>
+                    </ul>
+                    <p class="price-note">
+                        El coste del servidor Hetzner (~10-15€/mes) va aparte y
+                        lo contratas tú directamente
+                    </p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Vaultwarden -->
-        <div class="service-card reveal">
-          <div class="service-icon purple">🔐</div>
-          <h3>Vaultwarden</h3>
-          <div class="service-replaces">
-            Reemplaza a <span>1Password / Bitwarden Business</span>
-          </div>
-          <p>
-            Gestor de contraseñas para todo tu equipo. Las contraseñas se guardan
-            en tu servidor, no en el de ninguna empresa externa.
-          </p>
-          <ul class="service-features">
-            <li>Contraseñas cifradas en tu servidor</li>
-            <li>Acceso desde cualquier dispositivo</li>
-            <li>Compartir contraseñas entre empleados de forma segura</li>
-            <li>Extensión para navegador incluida</li>
-            <li>Compatible con la app de Bitwarden</li>
-          </ul>
+    <!-- CTA -->
+    <section class="cta-section" id="contacto">
+        <div class="cta-glow"></div>
+        <div style="position: relative; z-index: 1;">
+            <p class="section-tag">// Contacto</p>
+            <h2>¿Cuánto estás pagando<br />en SaaS este mes?</h2>
+            <p>
+                Escríbeme, me lo cuentas y te digo cuánto te puedo ahorrar.<br
+                />
+                Sin compromiso. Sin jerga técnica.
+            </p>
+
+            <a
+                href="mailto:martinabm4@pm.me"
+                class="btn-primary"
+                style="display: inline-flex; font-size: 1rem; padding: 1rem 2.5rem;"
+            >
+                Escribirme ahora →
+            </a>
+
+            <div class="contact-grid">
+                <a
+                    href="mailto:infraestructura@martin-bravo.dev"
+                    class="contact-pill"
+                >
+                    infraestructura@martin-bravo.dev
+                </a>
+                <span class="contact-pill" style="cursor: default;">
+                    Cadaqués, Girona
+                </span>
+                <span class="contact-pill" style="cursor: default;">
+                    Respondo en menos de 24h
+                </span>
+            </div>
         </div>
+    </section>
 
-        <!-- Hosting completo -->
-        <div class="service-card reveal">
-          <div class="service-icon blue">🖥️</div>
-          <h3>Hosting completo</h3>
-          <div class="service-replaces">
-            Reemplaza a <span>Varios SaaS combinados</span>
-          </div>
-          <p>
-            Te olvidas de la infraestructura. Yo gestiono el servidor, las
-            actualizaciones, los backups y la seguridad. Tú solo trabajas.
-          </p>
-          <ul class="service-features">
-            <li>Servidor en Europa (Hetzner, Frankfurt/Helsinki)</li>
-            <li>Backups automáticos diarios</li>
-            <li>Actualizaciones y parches de seguridad</li>
-            <li>Monitorización de disponibilidad 24/7</li>
-            <li>Soporte directo por WhatsApp/email</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Martin Bravo · Infraestructura digital para pymes</p>
+        <p style="margin-top: 0.4rem;">
+            Hecho con <a href="https://astro.build" target="_blank">Astro</a> · Desplegado
+            en Europa
+        </p>
+    </footer>
 
-  <!-- COMO FUNCIONA -->
-  <section class="section reveal">
-    <p class="section-tag">// Proceso</p>
-    <h2>Cómo funciona</h2>
-    <p class="section-sub">Sin tecnicismos, sin complicaciones.</p>
-
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">01</div>
-        <h3>Hablamos</h3>
-        <p>Me cuentas qué herramientas usas ahora y cuánto pagas. Te digo exactamente cuánto te puedo ahorrar.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <h3>Preparo el servidor</h3>
-        <p>Contrato el VPS en Hetzner (servidor europeo), instalo y configuro todo. Tú no tienes que hacer nada.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <h3>Migras en 24h</h3>
-        <p>Te ayudo a mover tus ficheros y a que todo tu equipo empiece a usar las herramientas sin interrupciones.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">04</div>
-        <h3>Yo me encargo del resto</h3>
-        <p>Actualizaciones, backups, seguridad. Si hay algún problema, me llamas a mí directamente.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- RGPD -->
-  <div class="rgpd-banner reveal">
-    <div class="rgpd-icon">🇪🇺</div>
-    <div class="rgpd-text">
-      <h3>RGPD sin dolores de cabeza</h3>
-      <p>
-        Los servidores están en Frankfurt o Helsinki (Hetzner), dentro de la Unión Europea.
-        Tus datos nunca salen de Europa, lo que facilita enormemente el cumplimiento del
-        Reglamento General de Protección de Datos. Algo que muchas empresas con Google Drive
-        no pueden decir.
-      </p>
-    </div>
-  </div>
-
-  <!-- PRECIOS -->
-  <section class="pricing-section" id="precios">
-    <div class="pricing-inner">
-      <p class="section-tag reveal">// Precios</p>
-      <h2 class="reveal">Transparente desde el principio</h2>
-      <p class="section-sub reveal">
-        Sin letras pequeñas. Sin precio por usuario. Pagas una vez para empezar
-        y una cuota fija mensual.
-      </p>
-
-      <div class="pricing-grid">
-        <div class="price-card reveal">
-          <div>
-            <div class="price-label">Setup inicial</div>
-            <div class="price-amount"><sup>desde </sup>150<sup>€</sup></div>
-          </div>
-          <p class="price-desc">Pago único para montar y configurar todo desde cero.</p>
-          <ul class="price-list">
-            <li>Contratación y configuración del servidor</li>
-            <li>Instalación de las herramientas que necesites</li>
-            <li>Configuración de dominio y SSL</li>
-            <li>Migración de tus datos actuales</li>
-            <li>Sesión de formación con tu equipo</li>
-          </ul>
-          <p class="price-note">Precio según complejidad — hablamos y presupuesto sin compromiso</p>
-        </div>
-
-        <div class="price-card highlight reveal">
-          <div>
-            <div class="price-label">Mantenimiento mensual</div>
-            <div class="price-amount"><sup>desde </sup>60<sup>€</sup><sub>/mes</sub></div>
-          </div>
-          <p class="price-desc">Yo me encargo de todo. Tú solo usas las herramientas.</p>
-          <ul class="price-list">
-            <li>Actualizaciones y parches de seguridad</li>
-            <li>Backups automáticos diarios</li>
-            <li>Monitorización de disponibilidad</li>
-            <li>Soporte directo (WhatsApp / email)</li>
-            <li>Restauración de backups si es necesario</li>
-          </ul>
-          <p class="price-note">El coste del servidor Hetzner (~10-15€/mes) va aparte y lo contratas tú directamente</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section" id="contacto">
-    <div class="cta-glow"></div>
-    <div style="position: relative; z-index: 1;">
-      <p class="section-tag">// Contacto</p>
-      <h2>¿Cuánto estás pagando<br />en SaaS este mes?</h2>
-      <p>
-        Escríbeme, me lo cuentas y te digo cuánto te puedo ahorrar.<br />
-        Sin compromiso. Sin jerga técnica.
-      </p>
-
-      <a href="mailto:martinabm4@pm.me" class="btn-primary" style="display: inline-flex; font-size: 1rem; padding: 1rem 2.5rem;">
-        Escribirme ahora →
-      </a>
-
-      <div class="contact-grid">
-        <a href="mailto:martinabm4@pm.me" class="contact-pill">
-          ✉️ martinabm4@pm.me
-        </a>
-        <span class="contact-pill" style="cursor: default;">
-          📍 Cadaqués, Girona
-        </span>
-        <span class="contact-pill" style="cursor: default;">
-          🕐 Respondo en menos de 24h
-        </span>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Martin Bravo · Infraestructura digital para pymes</p>
-    <p style="margin-top: 0.4rem;">
-      Hecho con <a href="https://astro.build" target="_blank">Astro</a> ·
-      Desplegado en Europa
-    </p>
-  </footer>
-
-  <script>
-    // Scroll reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e, i) => {
-          if (e.isIntersecting) {
-            setTimeout(() => e.target.classList.add('visible'), i * 80);
-            observer.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    reveals.forEach(el => observer.observe(el));
-  </script>
+    <script>
+        // Scroll reveal
+        const reveals = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((e, i) => {
+                    if (e.isIntersecting) {
+                        setTimeout(
+                            () => e.target.classList.add("visible"),
+                            i * 80,
+                        );
+                        observer.unobserve(e.target);
+                    }
+                });
+            },
+            { threshold: 0.1 },
+        );
+        reveals.forEach((el) => observer.observe(el));
+    </script>
 </Layout>
