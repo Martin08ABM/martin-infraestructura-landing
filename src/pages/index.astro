@@ -264,7 +264,8 @@ import Layout from "../layouts/Layout.astro";
                 empezar y una cuota fija mensual.
             </p>
 
-            <div class="pricing-grid">
+            <!-- Pago Inicial -->
+            <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 420px)); justify-content: center; margin-bottom: 2rem;">
                 <div class="price-card reveal">
                     <div>
                         <div class="price-label">Setup inicial</div>
@@ -292,8 +293,37 @@ import Layout from "../layouts/Layout.astro";
                         Configurar mi infraestructura →
                     </a>
                 </div>
+            </div>
 
-                <div class="price-card highlight reveal">
+            <!-- Pago Mensual -->
+            <div class="pricing-grid" style="margin-top: 0; justify-content: center;">
+                <div class="price-card reveal">
+                    <div>
+                        <div class="price-label">Mantenimiento básico</div>
+                        <div class="price-amount">
+                            <sup>desde </sup>40<sup>€</sup><sub>/mes</sub>
+                        </div>
+                    </div>
+                    <p class="price-desc">
+                        Para empresas pequeñas que solo necesitan lo esencial.
+                    </p>
+                    <ul class="price-list">
+                        <li>Hasta 3 servicios instalados</li>
+                        <li>Actualizaciones de seguridad</li>
+                        <li>Backups automáticos diarios</li>
+                        <li>Soporte por email</li>
+                        <li>VPS incluido</li>
+                    </ul>
+                    <p class="price-note">
+                        Ideal para empezar
+                    </p>
+                </div>
+
+                <div class="price-card highlight reveal" style="position: relative;">
+                    <span style="position: absolute; top: 1.25rem; right: 1.25rem; display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--font-mono); font-size: 0.7rem; color: #fff; background: var(--accent); padding: 0.3rem 0.8rem; border-radius: 100px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; box-shadow: 0 0 16px rgba(74,124,245,0.45);">
+                        <span style="width: 6px; height: 6px; border-radius: 50%; background: #fff; box-shadow: 0 0 6px #fff; display: inline-block;"></span>
+                        Más popular
+                    </span>
                     <div>
                         <div class="price-label">Mantenimiento mensual</div>
                         <div class="price-amount">
